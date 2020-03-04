@@ -16,7 +16,7 @@ GCR 인증정보 얻기
 
 GCR에 이미지 푸쉬
 
-``` %docker push gcr.io/terrycho-sandbox/hello-node:v1  ```
+``` %docker push gcr.io/{project id}/hello-node:v1  ```
 
 Replication Controller 등록
 
