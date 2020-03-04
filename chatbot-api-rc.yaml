@@ -1,0 +1,40 @@
+apiVersion: v1
+
+kind: ReplicationController
+
+metadata:
+
+  name: chatbot-api-rc
+
+spec:
+
+  replicas: 3
+
+  selector:
+
+    app: chatbot-api
+
+  template:
+
+    metadata:
+
+      name: chatbot-api-pod
+
+      labels:
+
+        app: chatbot-api
+
+    spec:
+
+      containers:
+
+      - name: chatbot-api
+
+        image: gcr.io/my-tutorial01/chatbot-api:v1
+
+        imagePullPolicy: Always
+
+        ports:
+
+        - containerPort: 3000
+
