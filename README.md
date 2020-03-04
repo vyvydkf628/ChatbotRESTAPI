@@ -25,3 +25,9 @@ Replication Controller 등록
 Service 등록
 
 ``` %kubectl create -f chatbot-api-svc.yaml ```
+
+
+## step2
+
+example)
+"http://{service external ip}:80/chat?sentence=what is your name?"
